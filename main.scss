@@ -1,0 +1,520 @@
+@use 'variables';
+@use 'mixins';
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+}
+
+
+
+//HEADER
+.header {
+    width: 100%;
+    height: 84px;  
+    background-color: #192140;  
+}
+.refocus-logo {
+    background-image: url(Images/Logo.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 110px;
+    height: 26px;   
+    position: absolute;
+    float: left;
+    margin-left: 80px;  
+    margin-top: 29px;
+}                  
+.navigation {
+    display: flex;      
+    float: right;
+    margin-right: 80px;
+    align-items: center;
+    height: 100%;
+    flex-direction: row;    
+}
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    margin-right: 30px;          
+}
+#signUp {
+    margin-left: 30px;
+    color: #9D9DB5;
+    font-weight: 700;
+}
+.logIn {
+    width: 86px;
+}
+.logIn  #logIn {
+    width: 86px;
+    height: 48px;
+    border: 1px solid #0266FF;
+    border-radius: 50px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0266FF;
+}
+.navigation a:hover {
+    color: #DCF10D;
+    text-decoration: underline;
+}
+.hamburg {
+    display: none;
+}
+   
+
+
+//CARDS CONTAINER
+.card-container {
+    padding: 40px 60px 40px 60px;    
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+.cards {
+    width: 320px;
+    height: 300px;
+    margin: 20px;  
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;  
+    background-color: #F8F9FC;
+}
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    color: #10131C;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 20px 10px 20px;
+    border-bottom: #9D9DB5 solid 1px;
+}
+.date-favorite {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.date-container {
+    width: 113px;
+    height: 24px;
+    border: #9D9DB5 solid 1px;
+    margin-right: 120px;
+    border-radius: 50px;
+}  
+.date {
+    text-align: center;
+    color: #9D9DB5;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+}  
+
+
+
+//HEART
+.heart {
+    background-image: url(Images/heart.svg);
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    width: 18px;
+    height: 18px;
+}
+.heart:hover {
+    background-image: url(Images/heart-outline.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.heart.on {
+    background-image: url(Images/heart-solid.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}   
+.likes {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #9D9DB5;
+    margin-top: 7px;
+    margin-left: 5px;                
+}           
+
+
+
+//CHECK
+.check-show {
+    background-image: url(Images/check-solid.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.cards:hover {
+    .read-container {
+        height: 20px;        
+    }
+    .check {
+        background-image: url(Images/check.svg);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }  
+    .check:hover {
+        background-image: url(Images/check.svg);
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .check.on {
+        background-image: url(Images/check-solid.svg);
+        background-repeat: no-repeat;
+        cursor: pointer;
+    } 
+    .card-image.image1{
+        height: 125px;
+    }
+    .card-image.image2{
+        height: 150px;
+    }
+    .card-image.image3{
+        height: 150px;
+    }
+    .card-image.image4{
+        height: 125px;
+    }
+    .card-image.image5{
+        height: 150px;
+    }
+    .card-image.image6{
+        height: 150px;
+    }
+    .card-image.image7{
+        height: 175px;
+    }
+    .card-image.image8{
+        height: 125px;
+    }
+    .card-image.image9{
+        height: 150px;
+    }
+}
+
+
+
+//DELETE
+.card-image:hover {
+    .delete {
+        background-image: url(Images/delete.svg);
+        background-repeat: no-repeat;
+        cursor: pointer; 
+        width: 20px;
+        height: 20px;        
+        display: flex;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 285px;        
+    }
+    .delete:hover {
+        background-image: url(Images/delete-outline.svg);
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .delete.on {
+        background-image: url(Images/delete-solid.svg);
+        background-repeat: no-repeat;
+        cursor: pointer;
+    } 
+}
+
+
+
+//CARDS IMAGES
+//Card 1
+.card-image.image1:hover{
+    background-image: variables.$gradientImage1;
+}
+.card-image.image1 {
+    @include mixins.displayImage1();
+    height: 155px;
+}
+.card-details1 {
+    height: 135px;
+    background-color: #F8F9FC;
+}
+//Card 2
+.card-image.image2:hover{
+    background-image: variables.$gradientImage2;
+}
+.card-image.image2 {
+    @include mixins.displayImage2();
+    height: 180px;
+}
+.card-details2 {
+    height: 110px;
+    background-color: #F8F9FC;
+}
+//Card 3
+.card-image.image3:hover{
+    background-image: variables.$gradientImage3;
+}
+.card-image.image3 {
+    @include mixins.displayImage3();
+    height: 180px;
+}
+.card-details3 {
+    height: 110px;
+    background-color: #F8F9FC;
+}
+//Card 4
+.card-image.image4:hover{
+    background-image: variables.$gradientImage4;
+}
+.card-image.image4 {
+    @include mixins.displayImage4();
+    height: 155px;
+}
+.card-details4 {
+    height: 135px;
+    background-color: #F8F9FC;
+}
+//Card 5
+.card-image.image5:hover{
+    background-image: variables.$gradientImage5;
+}
+.card-image.image5 {
+    @include mixins.displayImage5();
+    height: 180px;
+}
+.card-details5 {
+    height: 110px;
+    background-color: #F8F9FC;
+}
+//Card 6
+.card-image.image6:hover{
+    background-image: variables.$gradientImage6;
+}
+.card-image.image6 {
+    @include mixins.displayImage6();
+    height: 180px;
+}
+.card-details6 {
+    height: 110px;
+    background-color: #F8F9FC;
+}
+//Card 7
+.card-image.image7:hover{
+    background-image: variables.$gradientImage7;
+}
+.card-image.image7 {
+    @include mixins.displayImage7();
+    height: 205px;
+}
+.card-details7 {
+    height: 85px;
+    background-color: #F8F9FC;
+}
+//Card 8
+.card-image.image8:hover{
+    background-image: variables.$gradientImage8;
+}
+.card-image.image8 {
+    @include mixins.displayImage8();
+    height: 155px;
+}
+.card-details8 {
+    height: 135px;
+    background-color: #F8F9FC;
+}
+//Card 9
+.card-image.image9:hover{
+    background-image: variables.$gradientImage9;
+}
+.card-image.image9 {
+    @include mixins.displayImage9();
+    height: 180px;
+}
+.card-details9 {
+    height: 110px;
+    background-color: #F8F9FC;
+}
+
+
+
+//FOOTER
+.footer {
+    width: 100%;
+    height: 274px;
+    background-color: #10131C;
+    display: flex;
+}
+.left {
+    width: 66%;
+    padding-top: 60px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer-content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    a {
+        margin-right: 20px;
+    }
+    margin-bottom: 40px;
+}
+
+.right {
+    padding-top: 60px;
+    padding-right: 75px;
+}
+.follow {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+}
+.socmed-icons{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 82px;
+}
+
+#linkedin {
+    @include mixins.linkedin();
+}
+#instagram {
+    @include mixins.instagram();
+}
+#facebook {
+    @include mixins.facebook();
+}
+#twitter {
+    @include mixins.twitter();
+}
+#whatsapp {
+    @include mixins.whatsapp();
+}
+#tiktok {
+    @include mixins.tiktok();
+}
+#youtube {
+    @include mixins.youtube();
+}
+.legality {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    color: #9D9DB5;
+    font-size: 12px;
+}
+
+
+
+
+@media only screen and (max-width: 900px){
+    .container {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .header {
+        width: 100%;
+        height: 90px;       
+    }
+    .refocus-logo {
+        margin-left: 20px;
+        margin-top: 44px;
+    }
+    .navigation {
+        position: absolute;
+        left: -100%;
+        top: 89px;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-color: #192140; 
+        gap: 10px;
+        text-align: center;
+
+    }
+    .navigation.active{
+        left: 0;
+    }
+    a {
+        margin-right: 0;
+    }
+    #signUp {
+        margin-left: 0;
+        color: white;
+        font-weight: normal;
+    }
+    .logIn #logIn{
+        border: none;
+        height: 18px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .hamburg {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #0266FF;
+        border-radius: 50%;   
+        justify-content: center;
+        align-items: center;
+        float: right;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+    #hamburg {
+        margin-right: 0px;
+        width: 15px;
+        height: 15px;
+        color: #0266FF;
+        cursor: pointer;
+    }
+
+    .footer {
+        width: 100%;
+        height: 429px;
+        display: flex;
+        flex-direction: column;
+    }
+    .left {
+        display: flex;
+        width: 100%;
+        padding-top: 40px;
+        padding-left: 15px;
+    }
+    .right {
+        width: 100%;
+        padding-top: 0;
+        padding-right: 0px;
+        padding-left: 15px;
+        margin-bottom: 40px;
+    }
+    .socmed-icons {
+        margin-bottom: 40px;
+    }
+}

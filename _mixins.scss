@@ -1,0 +1,112 @@
+@mixin displayImage1() {
+    background-image: url(Images/Image-8.png);       
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+@mixin displayImage2() {
+    background-image: url(Images/Image-7.png);       
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+@mixin displayImage3() {
+    background-image: url(Images/Image-6.png);       
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+@mixin displayImage4() {
+    background-image: url(Images/Image-5.png);       
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+@mixin displayImage5() {
+    background-image: url(Images/Image-4.png);       
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+@mixin displayImage6() {
+    background-image: url(Images/Image-3.png);       
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+@mixin displayImage7() {
+    background-image: url(Images/Image-2.png);       
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+@mixin displayImage8() {
+    background-image: url(Images/Image-1.png);       
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+@mixin displayImage9() {
+    background-image: url(Images/Image.png);       
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+
+
+@mixin linkedin() {
+    background-image: url(Images/linkedin.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+@mixin instagram() {
+    background-image: url(Images/instagram.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+@mixin facebook() {
+    background-image: url(Images/facebook.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+@mixin twitter() {
+    background-image: url(Images/twitter.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+@mixin whatsapp() {
+    background-image: url(Images/whatsapp.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+@mixin tiktok() {
+    background-image: url(Images/tiktok.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+@mixin youtube() {
+    background-image: url(Images/youtube.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}

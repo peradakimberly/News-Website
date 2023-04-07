@@ -1,0 +1,593 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+}
+
+.header {
+  width: 100%;
+  height: 84px;
+  background-color: #192140;
+}
+
+.refocus-logo {
+  background-image: url(Images/Logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 110px;
+  height: 26px;
+  position: absolute;
+  float: left;
+  margin-left: 80px;
+  margin-top: 29px;
+}
+
+.navigation {
+  display: flex;
+  float: right;
+  margin-right: 80px;
+  align-items: center;
+  height: 100%;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  margin-right: 30px;
+}
+
+#signUp {
+  margin-left: 30px;
+  color: #9D9DB5;
+  font-weight: 700;
+}
+
+.logIn {
+  width: 86px;
+}
+
+.logIn #logIn {
+  width: 86px;
+  height: 48px;
+  border: 1px solid #0266FF;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0266FF;
+}
+
+.navigation a:hover {
+  color: #DCF10D;
+  text-decoration: underline;
+}
+
+.hamburg {
+  display: none;
+}
+
+.card-container {
+  padding: 40px 60px 40px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards {
+  width: 320px;
+  height: 300px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F8F9FC;
+}
+
+.card-title {
+  font-family: "Roboto", sans-serif;
+  color: #10131C;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 20px 10px 20px;
+  border-bottom: #9D9DB5 solid 1px;
+}
+
+.date-favorite {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.date-container {
+  width: 113px;
+  height: 24px;
+  border: #9D9DB5 solid 1px;
+  margin-right: 120px;
+  border-radius: 50px;
+}
+
+.date {
+  text-align: center;
+  color: #9D9DB5;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-top: 5px;
+}
+
+.heart {
+  background-image: url(Images/heart.svg);
+  background-repeat: no-repeat;
+  margin-top: 5px;
+  width: 18px;
+  height: 18px;
+}
+
+.heart:hover {
+  background-image: url(Images/heart-outline.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.heart.on {
+  background-image: url(Images/heart-solid.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.likes {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #9D9DB5;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+.check-show {
+  background-image: url(Images/check-solid.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.cards:hover .read-container {
+  height: 20px;
+}
+.cards:hover .check {
+  background-image: url(Images/check.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.cards:hover .check:hover {
+  background-image: url(Images/check.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.cards:hover .check.on {
+  background-image: url(Images/check-solid.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.cards:hover .card-image.image1 {
+  height: 125px;
+}
+.cards:hover .card-image.image2 {
+  height: 150px;
+}
+.cards:hover .card-image.image3 {
+  height: 150px;
+}
+.cards:hover .card-image.image4 {
+  height: 125px;
+}
+.cards:hover .card-image.image5 {
+  height: 150px;
+}
+.cards:hover .card-image.image6 {
+  height: 150px;
+}
+.cards:hover .card-image.image7 {
+  height: 175px;
+}
+.cards:hover .card-image.image8 {
+  height: 125px;
+}
+.cards:hover .card-image.image9 {
+  height: 150px;
+}
+
+.card-image:hover .delete {
+  background-image: url(Images/delete.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 285px;
+}
+.card-image:hover .delete:hover {
+  background-image: url(Images/delete-outline.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.card-image:hover .delete.on {
+  background-image: url(Images/delete-solid.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.card-image.image1:hover {
+  background-image: linear-gradient(180deg, #192140 0%, rgba(25, 33, 64, 0) 70.8%), url(Images/Image-8.png);
+}
+
+.card-image.image1 {
+  background-image: url(Images/Image-8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 155px;
+}
+
+.card-details1 {
+  height: 135px;
+  background-color: #F8F9FC;
+}
+
+.card-image.image2:hover {
+  background-image: linear-gradient(180deg, #192140 0%, rgba(25, 33, 64, 0) 70.8%), url(Images/Image-7.png);
+}
+
+.card-image.image2 {
+  background-image: url(Images/Image-7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 180px;
+}
+
+.card-details2 {
+  height: 110px;
+  background-color: #F8F9FC;
+}
+
+.card-image.image3:hover {
+  background-image: linear-gradient(180deg, #192140 0%, rgba(25, 33, 64, 0) 70.8%), url(Images/Image-6.png);
+}
+
+.card-image.image3 {
+  background-image: url(Images/Image-6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 180px;
+}
+
+.card-details3 {
+  height: 110px;
+  background-color: #F8F9FC;
+}
+
+.card-image.image4:hover {
+  background-image: linear-gradient(180deg, #192140 0%, rgba(25, 33, 64, 0) 70.8%), url(Images/Image-5.png);
+}
+
+.card-image.image4 {
+  background-image: url(Images/Image-5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 155px;
+}
+
+.card-details4 {
+  height: 135px;
+  background-color: #F8F9FC;
+}
+
+.card-image.image5:hover {
+  background-image: linear-gradient(180deg, #192140 0%, rgba(25, 33, 64, 0) 70.8%), url(Images/Image-4.png);
+}
+
+.card-image.image5 {
+  background-image: url(Images/Image-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 180px;
+}
+
+.card-details5 {
+  height: 110px;
+  background-color: #F8F9FC;
+}
+
+.card-image.image6:hover {
+  background-image: linear-gradient(180deg, #192140 0%, rgba(25, 33, 64, 0) 70.8%), url(Images/Image-3.png);
+}
+
+.card-image.image6 {
+  background-image: url(Images/Image-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 180px;
+}
+
+.card-details6 {
+  height: 110px;
+  background-color: #F8F9FC;
+}
+
+.card-image.image7:hover {
+  background-image: linear-gradient(180deg, #192140 0%, rgba(25, 33, 64, 0) 70.8%), url(Images/Image-2.png);
+}
+
+.card-image.image7 {
+  background-image: url(Images/Image-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 205px;
+}
+
+.card-details7 {
+  height: 85px;
+  background-color: #F8F9FC;
+}
+
+.card-image.image8:hover {
+  background-image: linear-gradient(180deg, #192140 0%, rgba(25, 33, 64, 0) 70.8%), url(Images/Image-1.png);
+}
+
+.card-image.image8 {
+  background-image: url(Images/Image-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 155px;
+}
+
+.card-details8 {
+  height: 135px;
+  background-color: #F8F9FC;
+}
+
+.card-image.image9:hover {
+  background-image: linear-gradient(180deg, #192140 0%, rgba(25, 33, 64, 0) 70.8%), url(Images/Image.png);
+}
+
+.card-image.image9 {
+  background-image: url(Images/Image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 180px;
+}
+
+.card-details9 {
+  height: 110px;
+  background-color: #F8F9FC;
+}
+
+.footer {
+  width: 100%;
+  height: 274px;
+  background-color: #10131C;
+  display: flex;
+}
+
+.left {
+  width: 66%;
+  padding-top: 60px;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.footer-content a {
+  margin-right: 20px;
+}
+
+.right {
+  padding-top: 60px;
+  padding-right: 75px;
+}
+
+.follow {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: white;
+  font-weight: 400;
+}
+
+.socmed-icons {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 82px;
+}
+
+#linkedin {
+  background-image: url(Images/linkedin.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+#instagram {
+  background-image: url(Images/instagram.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+#facebook {
+  background-image: url(Images/facebook.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+#twitter {
+  background-image: url(Images/twitter.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+#whatsapp {
+  background-image: url(Images/whatsapp.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+#tiktok {
+  background-image: url(Images/tiktok.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+#youtube {
+  background-image: url(Images/youtube.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.legality {
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  color: #9D9DB5;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 100vw;
+    height: 100%;
+  }
+  .header {
+    width: 100%;
+    height: 90px;
+  }
+  .refocus-logo {
+    margin-left: 20px;
+    margin-top: 44px;
+  }
+  .navigation {
+    position: absolute;
+    left: -100%;
+    top: 89px;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #192140;
+    gap: 10px;
+    text-align: center;
+  }
+  .navigation.active {
+    left: 0;
+  }
+  a {
+    margin-right: 0;
+  }
+  #signUp {
+    margin-left: 0;
+    color: white;
+    font-weight: normal;
+  }
+  .logIn #logIn {
+    border: none;
+    height: 18px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .hamburg {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #0266FF;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-right: 20px;
+    margin-top: 40px;
+  }
+  #hamburg {
+    margin-right: 0px;
+    width: 15px;
+    height: 15px;
+    color: #0266FF;
+    cursor: pointer;
+  }
+  .footer {
+    width: 100%;
+    height: 429px;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    display: flex;
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 15px;
+  }
+  .right {
+    width: 100%;
+    padding-top: 0;
+    padding-right: 0px;
+    padding-left: 15px;
+    margin-bottom: 40px;
+  }
+  .socmed-icons {
+    margin-bottom: 40px;
+  }
+}/*# sourceMappingURL=main.css.map */
